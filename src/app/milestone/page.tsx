@@ -4,7 +4,7 @@ import Link from "next/link";
 import MilestoneTimeline from "@/components/MilestoneTimeline";
 
 export const metadata: Metadata = {
-  title: "Milestone • Fikly $ujud",
+  title: "Milestone",
   description: "Perjalanan seorang calon Full Stack Developer yang didorong oleh Power F",
 };
 
@@ -29,7 +29,7 @@ export default function MilestonePage() {
             href="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition"
           >
-            ← Kembali ke Home
+            ← Back to Main Point
           </Link>
         </div>
       </div>

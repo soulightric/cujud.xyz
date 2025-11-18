@@ -18,9 +18,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+    { name: "Status", href: "/status"},
   ];
 
   const closeSheet = () => setOpen(false);

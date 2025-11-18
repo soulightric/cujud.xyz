@@ -14,27 +14,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Fikly $ujud — Calon Full Stack Dev Indonesia",
-    template: "%s | Fikly $ujud",
+    default: "Fikly Cujud",
+    template: "%s | Fikly Cujud",
   },
-  description: "Portfolio Fikly $ujud (Soulightric) — Calon Full Stack Developer, CEO Wannabe, dan Night Owl Coder dari Indonesia. Power F is my fuel.",
-  keywords: "fikly sujud, soulightric, full stack developer indonesia, next.js portfolio, web developer indonesia, frontend developer, power f",
-  authors: [{ name: "Fikly $ujud", url: "https://fiklycujud.vercel.app" }],
+  description: "Portfolio Fikly Cujud (Soulightric) — Calon Full Stack Developer, CEO Etherthink, dan Night Owl Coder. Power F is my fuel.",
+  keywords: "fikri sujud, fikly cujud, soulightric, full stack developer indonesia, next.js portfolio, web developer indonesia, frontend developer, power f, etherthink",
+  authors: [{ name: "Fikly Cujud", url: "https://fiklycujud.vercel.app" }],
   creator: "Fikri Sujud",
-  publisher: "Fikri Sujud",
+  publisher: "Etherthink",
   metadataBase: new URL("https://fiklycujud.vercel.app"),
   
   openGraph: {
-    title: "Fikri Sujud — Power F Activated",
-    description: "Calon Full Stack Dev • CEO Enthusiast • Secret Identity dari Indonesia",
+    title: "Fikri Sujud — Portofolio",
+    description: "Calon Full Stack Dev • CEO Enthusiast • Secret Identity",
     url: "https://fiklycujud.vercel.app",
     siteName: "Fikri Sujud",
     images: [
       {
-        url: "/Yui Hirasawa600x315.jpg",       // nanti kita buat gambar ini
+        url: "/Yui Hirasawa600x315.jpg",      // insert from /public
         width: 600,
         height: 315,
-        alt: "Fikly $ujud — Power F",
+        alt: "Fikly Cujud",
       },
     ],
     locale: "id_ID",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fikly $ujud",
-    description: "Power F is my fuel.",
+    title: "Fikly Sujud",
+    description: "Slowly but Surely",
     images: ["/Yui Hirasawa600x315.jpg"],
     creator: "@soulightric",
   },
