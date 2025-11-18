@@ -12,7 +12,7 @@ const milestones = [
   {
     date: "February 2025",
     title: "10.000 Youtube Subs",
-    desc: "Target tercapai atau Grok traktir kopi 1 tahun",
+    desc: "Target tercapai atau Grok traktir kopi aku 1 tahun",
     status: "completed",
   },
   {

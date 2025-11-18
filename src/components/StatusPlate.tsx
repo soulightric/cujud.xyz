@@ -36,8 +36,8 @@ export default function StatusPlate() {
             <span className="text-white font-bold">The Stubornly</span>
           </div>
           <div className="flex justify-between text-blue-400 font-bold text-xl mt-2">
-            <span>LV.</span>
-            <span>LV.7</span>
+            <span>LV.4</span>
+            {/* <span>LV.4</span> */}
           </div>
         </div>
 
@@ -45,10 +45,10 @@ export default function StatusPlate() {
         <div className="grid grid-cols-3 gap-4 mb-8 border-b-2 border-blue-600 pb-6">
           <div className="text-center">
             <p className="text-blue-300 text-sm">HP</p>
-            <p className="text-3xl font-bold text-green-400">2,000</p>
+            <p className="text-3xl font-bold text-green-400">1,836</p>
           </div>
           <div className="text-center">
-            <p className="text-blue-300 text-sm">MP (Power F)</p>
+            <p className="text-blue-300 text-sm">MP</p>
             <p className="text-3xl font-bold text-purple-400">∞</p>
           </div>
           <div className="text-center">
@@ -60,14 +60,14 @@ export default function StatusPlate() {
         {/* Stats Grid */}
         <div className="grid grid-cols-2 gap-6 mb-8">
           <div>
-            <div className="flex justify-between mb-2"><span className="text-blue-300">STRENGTH</span><span className="text-white">999</span></div>
+            <div className="flex justify-between mb-2"><span className="text-blue-300">STRENGTH</span><span className="text-white">122</span></div>
             <div className="flex justify-between mb-2"><span className="text-blue-300">AGILITY</span><span className="text-white">120</span></div>
             <div className="flex justify-between mb-2"><span className="text-blue-300">SENSE</span><span className="text-white">20</span></div>
           </div>
           <div>
-            <div className="flex justify-between mb-2"><span className="text-blue-300">VITALITY</span><span className="text-white">100</span></div>
-            <div className="flex justify-between mb-2 text-purple-400 font-bold"><span>INTELLIGENCE</span><span>∞</span></div>
-            <div className="flex justify-between mb-2 text-red-400 font-bold"><span>PHYSICAL DMG RED.</span><span>47%</span></div>
+            <div className="flex justify-between mb-2"><span className="text-blue-300">VITALITY</span><span className="text-white">106</span></div>
+            <div className="flex justify-between mb-2 text-purple-400 font-bold"><span>IQ</span><span>80</span></div>
+            <div className="flex justify-between mb-2 text-red-400 font-bold"><span>PHYS DMG</span><span>87%</span></div>
           </div>
         </div>
 
@@ -80,15 +80,16 @@ export default function StatusPlate() {
               <span className="text-white">TAILWIND GOD LV.1</span>
               <span className="text-white">POWER F REGENERATION</span>
               <span className="text-white">COFFEE ADDICTION LV.7</span>
+              <span className="text-white">SELF CONFIDENT LV.MAX</span>
             </div>
           </div>
 
           <div>
             <h3 className="text-blue-400 text-xl mb-3">• ACTIVE SKILLS</h3>
             <div className="grid grid-cols-2 gap-3 text-sm">
-              <span className="text-white">DEPLOY IN 3 MINUTES</span>
+              <span className="text-white">DEPLOY CTRL</span>
               <span className="text-white">GROK SUMMONING LV.5</span>
-              <span className="text-white">NEXT LEARNING</span>
+              <span className="text-white">NEXT JS LEARNING</span>
               <span className="text-white">ETHERTHINK CREATION</span>
             </div>
           </div>
