@@ -1,32 +1,36 @@
-// src/app/milestone/page.tsx → OTOMATIS SSR!
+// src/app/milestone/page.tsx → SERVER COMPONENT 100% BERSIH
 import { Metadata } from "next";
+import Link from "next/link";
+import MilestoneTimeline from "@/components/MilestoneTimeline";
 
 export const metadata: Metadata = {
-  title: "Milestone & Achievement — Fikly $ujud",
-  description: "Daftar pencapaian, proyek selesai, dan target masa depan",
+  title: "Milestone • Fikly $ujud",
+  description: "Perjalanan seorang calon Full Stack Developer yang didorong oleh Power F",
 };
 
 export default function MilestonePage() {
-  // BISA LANGSUNG FETCH DATA DI SINI → SSR!
-  // const achievements = await fetch("https://api.github.com/users/soulightric").then(r => r.json())
-
   return (
-    <main className="min-h-screen py-24">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-6xl md:text-8xl font-display mb-8 text-center">
-          Milestone
-        </h1>
-        
-        <div className="space-y-12">
-          <div className="border-l-4 border-primary pl-8">
-            <h2 className="text-3xl font-bold">November 2025</h2>
-            <p className="text-muted-foreground">Portfolio v2 dengan SSR, OG Image, dan Power F launched!</p>
-          </div>
-          
-          <div className="border-l-4 border-primary/50 pl-8">
-            <h2 className="text-3xl font-bold">Desember 2025</h2>
-            <p className="text-muted-foreground">Target: 10k GitHub stars + 3 client freelance</p>
-          </div>
+    <main className="min-h-screen bg-background py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        {/* Header — tanpa motion (animasi pindah ke client) */}
+        <div className="text-center mb-20">
+          <h1 className="text-7xl md:text-9xl font-black tracking-tighter bg-gradient-to-r from-emerald-500 to-blue-600 bg-clip-text text-transparent mb-4">
+            Milestone
+          </h1>
+          <p className="text-xl text-muted-foreground">Powered by Pain</p>
+        </div>
+
+        {/* Semua animasi + scroll progress ada di sini → Client Component */}
+        <MilestoneTimeline />
+
+        {/* Back link */}
+        <div className="text-center mt-24">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition"
+          >
+            ← Kembali ke Home
+          </Link>
         </div>
       </div>
     </main>

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Youtube} from "lucide-react";
 import { motion } from "framer-motion";
 import MatrixWorms from "./MatrixWorms";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -30,10 +31,10 @@ export default function Hero() {
 
             <div className="flex gap-4 justify-center mb-12 flex-wrap">
               <Button size="lg" asChild>
-                <a href="/milestone">Purpose</a>
+                <Link href="/milestone">Milestone</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://www.youtube.com/channel/UCCdW5ISUbmNzFj6EOtr-DnQ" target="_blank" rel="noopener noreferrer">Network</a>
+                <a href="https://www.etherthink.my.id/" target="_blank">Etherthink</a>
               </Button>
             </div>
 
@@ -46,12 +47,12 @@ export default function Hero() {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
-              <a href="https://youtube.com/soulightric" target="_blank" className="text-muted-foreground hover:text-primary transition">
+              <a href="https://www.youtube.com/channel/UCCdW5ISUbmNzFj6EOtr-DnQ" target="_blank" className="text-muted-foreground hover:text-primary transition">
                 <Youtube className="w-7 h-7" />
               </a>
-              <a href="mailto:halo@soulightric.dev" className="text-muted-foreground hover:text-primary transition">
+              {/* <a href="mailto:halo@soulightric.dev" className="text-muted-foreground hover:text-primary transition">
                 <Mail className="w-7 h-7" />
-              </a>
+              </a> */}
             </div>
           </motion.div>
 
