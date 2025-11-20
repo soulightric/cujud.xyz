@@ -50,9 +50,6 @@ export default function Hero() {
               <a href="https://www.youtube.com/channel/UCCdW5ISUbmNzFj6EOtr-DnQ" target="_blank" className="text-muted-foreground hover:text-primary transition">
                 <Youtube className="w-7 h-7" />
               </a>
-              {/* <a href="mailto:halo@soulightric.dev" className="text-muted-foreground hover:text-primary transition">
-                <Mail className="w-7 h-7" />
-              </a> */}
             </div>
           </motion.div>
 
