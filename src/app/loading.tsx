@@ -9,7 +9,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3200); // muncul 3.2 detik
+    }, 2000); // muncul 2 detik
 
     return () => clearTimeout(timer);
   }, []);

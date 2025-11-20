@@ -2,15 +2,17 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import MilestoneTimeline from "@/components/MilestoneTimeline";
+import MatrixWorms from "@/components/MatrixWorms";
 
 export const metadata: Metadata = {
   title: "Milestone",
-  description: "Perjalanan seorang calon Full Stack Developer yang didorong oleh Power F",
+  description: "Perjalanan seorang calon Full Stack Developer yang didorong oleh rasa penghianatan",
 };
 
 export default function MilestonePage() {
   return (
-    <main className="min-h-screen bg-background py-24 px-6">
+    <main className="min-h-screen py-24 px-6">
+    <MatrixWorms />
       <div className="max-w-5xl mx-auto">
         {/* Header — tanpa motion (animasi pindah ke client) */}
         <div className="text-center mb-20">
