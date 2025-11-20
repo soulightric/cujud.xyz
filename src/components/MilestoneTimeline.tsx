@@ -16,7 +16,7 @@ const milestones = [
     status: "completed",
   },
   {
-    date: "November",
+    date: "November 2025",
     title: "Portofolio - Fikri",
     desc: "Di build dengan NEXT.Js yang membuat web ini terlihat keren.",
     status: "completed",
