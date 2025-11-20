@@ -4,8 +4,8 @@ import Guestbook from "@/components/Guestbook";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Guestbook • Fikly $ujud",
-  description: "Tinggalkan jejakmu di dunia Shadow Monarch of Frontend",
+  title: "Guestbook",
+  description: "Tinggalkan jejakmu di guestbookku",
 };
 
 export default function GuestbookPage() {

@@ -4,7 +4,7 @@ import StatusPlate from "@/components/StatusPlate";
 
 export const metadata: Metadata = {
   title: "Status",
-  description: "System activated. Power F level: MAX",
+  description: "System activated. self-confident LV: MAX",
 };
 
 export default function StatusPage() {

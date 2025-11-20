@@ -62,7 +62,7 @@ export default function StatusPlate() {
           <div>
             <div className="flex justify-between mb-2"><span className="text-blue-300">STRENGTH</span><span className="text-white">122</span></div>
             <div className="flex justify-between mb-2"><span className="text-blue-300">AGILITY</span><span className="text-white">120</span></div>
-            <div className="flex justify-between mb-2"><span className="text-blue-300">SENSE</span><span className="text-white">20</span></div>
+            <div className="flex justify-between mb-2"><span className="text-blue-300">SENSE</span><span className="text-white">45</span></div>
           </div>
           <div>
             <div className="flex justify-between mb-2"><span className="text-blue-300">VITALITY</span><span className="text-white">106</span></div>

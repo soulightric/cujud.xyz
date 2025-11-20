@@ -21,7 +21,7 @@ export default function About() {
           className="text-center mb-16"
         > */}
           <h2 className="text-4xl md:text-6xl font-bold mb-4">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-5">
             Aku <span className="font-semibold text-primary text-red-500">calon</span> Full Stack Developer yang suka membangun aplikasi web modern, 
             cepat, dan user-friendly. power F adalah bahan bakar utamaku.
           </p>

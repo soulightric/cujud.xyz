@@ -161,3 +161,22 @@
 h1 {
   animation: gradient 12s ease infinite;
 }
+
+/* Code block Solo Leveling style */
+.prose :where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  background: #0d0015 !important;
+  border: 1px solid #ff003c !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  background: #1a0022 !important;
+  color: #ff3366 !important;
+  padding: 0.2rem 0.5rem !important;
+  border-radius: 6px !important;
+  font-size: 0.9em;
+}

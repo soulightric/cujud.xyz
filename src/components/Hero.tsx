@@ -28,8 +28,8 @@ export default function Hero() {
             {/* <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Calon Full Stack Dev • CEO Enthusiast • Secret Identity
             </p> */}
-            <h2 className="text-2xl md:text-4xl mr-10 ml-10 font-medium text-muted-foreground mb-8">
-              "Aku mungkin terlahir tanpa bakat, but i believe if usaha yang sering di asah, bisa menyaingi bahkan melebihi mereka yang berbakat"
+            <h2 className="text-2xl md:text-4xl font-medium text-muted-foreground mb-8">
+              "Aku mungkin terlahir tanpa bakat, tapi aku percaya jika usaha yang sering di asah, bisa menyaingi bahkan melebihi mereka yang berbakat"
             </h2>
 
             <div className="flex gap-4 justify-center mb-12 flex-wrap">
