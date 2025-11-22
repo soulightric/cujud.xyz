@@ -23,7 +23,7 @@ export default function Hero() {
               はじめまして俺は
             </h2>
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-emerald-500 to-blue-600 bg-clip-text text-transparent mb-5 leading-tight tracking-tight">
-              Fikly $ujud
+              Fikly Cujud
             </h1>
             {/* <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Calon Full Stack Dev • CEO Enthusiast • Secret Identity

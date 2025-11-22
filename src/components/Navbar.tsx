@@ -18,10 +18,6 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    // on if i want
-    // { name: "About", href: "/about" },
-    // { name: "Projects", href: "/projects" },
-    // { name: "Contact", href: "/contact" },
     { name: "Status", href: "/status"},
     { name: "Milestone", href: "/milestone"},
     { name: "Purpose (uc)", href: "/purpose"},
@@ -38,7 +34,7 @@ export default function Navbar() {
           className="text-2xl font-bold bg-gradient-to-r from-emerald-500 to-blue-600 bg-clip-text text-transparent pl-2"
           onClick={closeSheet}
         >
-          F$
+          FC
         </Link>
 
         {/* Desktop Nav */}
