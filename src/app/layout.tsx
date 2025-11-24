@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Orbitron, Bruno_Ace, Bebas_Neue } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const display = Bebas_Neue({ 
   subsets: ["latin"],
@@ -81,6 +82,7 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={inter.className}>
+        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
