@@ -82,13 +82,13 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={inter.className}>
-        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={true}
         >
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
