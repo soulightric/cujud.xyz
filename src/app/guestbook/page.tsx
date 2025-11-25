@@ -22,7 +22,7 @@ export default function GuestbookPage() {
           <h1 className="text-5xl md:text-9xl font-black tracking-tighter bg-gradient-to-r from-emerald-500 to-blue-600 bg-clip-text text-transparent mb-4">
             GUESTBOOK
           </h1>
-          <p className="text-xl text-emerald-300">Tinggalkan jejak sebelum pergi yaa bre</p>
+          <p className="text-xl text-emerald-300">Tinggalkan jejak sebelum pergi yaa bang/kak/bu/pak</p>
         </div>
 
         {/* Guestbook Component */}
