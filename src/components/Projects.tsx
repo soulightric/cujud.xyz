@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "Etherthink (ERTH)",
+    title: "Etherthink - ERTH",
     desc: "Rencananya mau jadi web perusahaan multivalue, tapi masih dalam tahap pengembangan awal. intinya liat aja hidupku kedepannya gimana.",
     tech: ["HTML", "CSS", "JAVA SCRIPT"],
     live: "https://www.etherthink.my.id",
@@ -17,7 +17,7 @@ const projects = [
     image: "/images/projects-1.webp"
   },
   {
-    title: "Next Portfolio ( This Site )  ",
+    title: "Next Portfolio (This)  ",
     desc: "Aku membuat website portofolio ini menggunakan Next.js dan masih belajar lebih dalam lagi.",
     tech: ["Next.Js", "React", "Tailwind CSS"],
     live: "https://cujud.vercel.app/",
@@ -25,7 +25,7 @@ const projects = [
     image: "/images/projects-2.webp"
   },
   {
-    title: "Angular Portfolio (OG)",
+    title: "Angular Portfolio (UC)",
     desc: "Belum jadi..",
     tech: ["Angular", "Typescript", "Tailwind CSS"],
     live: "https://cujud.vercel.app/not-found",
