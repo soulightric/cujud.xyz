@@ -22,10 +22,10 @@ const projects = [
     tech: ["Next.Js", "React", "Tailwind CSS"],
     live: "https://cujud.vercel.app/",
     github: "https://github.com/soulightric/portofolio",
-    image: "/images/projects-4.webp"
+    image: "/images/projects-2.webp"
   },
   {
-    title: "Angular Portfolio (UC)",
+    title: "Angular Portfolio (OG)",
     desc: "Belum jadi..",
     tech: ["Angular", "Typescript", "Tailwind CSS"],
     live: "https://cujud.vercel.app/not-found",
