@@ -20,15 +20,15 @@ export const metadata: Metadata = {
   },
   description: "Portfolio Fikly Cujud (Soulightric) — Calon Full Stack Developer, CEO Etherthink, dan Night Owl Coder. Power F is my fuel.",
   keywords: "fikri sujud, fikly cujud, soulightric, full stack developer indonesia, next.js portfolio, web developer indonesia, frontend developer, power f, etherthink",
-  authors: [{ name: "Fikly Cujud", url: "https://fiklycujud.vercel.app" }],
+  authors: [{ name: "Fikly Cujud", url: "https://cujud.vercel.app" }],
   creator: "Fikri Sujud",
   publisher: "Etherthink",
-  metadataBase: new URL("https://fiklycujud.vercel.app"),
+  metadataBase: new URL("https://cujud.vercel.app"),
   
   openGraph: {
     title: "Fikri Sujud — Portofolio",
     description: "Calon Full Stack Dev • CEO Enthusiast • Secret Identity",
-    url: "https://fiklycujud.vercel.app",
+    url: "https://cujud.vercel.app",
     siteName: "Fikri Sujud",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://fiklycujud.vercel.app",
+    canonical: "https://cujud.vercel.app",
   },
 };
 
