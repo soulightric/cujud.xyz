@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Orbitron, Bruno_Ace, Bebas_Neue } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
 
 const display = Bebas_Neue({ 
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({
         >
           {children}
           <SpeedInsights />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
