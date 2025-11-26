@@ -3,7 +3,7 @@ import BitcoinPrice from "@/components/BitcoinPrice";
 import BitcoinWallet from "@/components/BitcoinWallet";
 
 export const metadata = {
-  title: "Bitcoin • Fikly $ujud",
+  title: "Bitcoin",
   description: "My Bitcoin wallet & real-time price",
 };
 

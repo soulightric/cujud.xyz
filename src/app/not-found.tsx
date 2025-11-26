@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import DungeonLocked from "@/components/DungeonLocked";
 
 export const metadata: Metadata = {
-  title: "Dungeon Locked • Fikly $ujud",
+  title: "Dungeon Locked",
   description: "Gate will open soon...",
 };
 

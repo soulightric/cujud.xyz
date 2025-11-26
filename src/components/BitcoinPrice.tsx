@@ -30,15 +30,6 @@ export default function BitcoinPrice() {
           {change > 0 ? "↑" : "↓"} {Math.abs(Number(change))}%
           <span className="text-gray-500 text-lg ml-2">24h</span>
         </p>
-
-        <div className="mt-8">
-          <img
-            src="https://www.coingecko.com/coins/1/sparkline"
-            alt="Bitcoin 7d chart"
-            className="mx-auto w-full max-w-2xl"
-          />
-        </div>
-
         <p className="text-gray-500 text-sm mt-6">
           Powered by CoinGecko • Updated every 30s
         </p>

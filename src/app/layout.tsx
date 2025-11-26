@@ -1,4 +1,4 @@
-// src/app/layout.tsx — VERSI FINAL 100/100/100/100
+// src/app/layout.tsx
 
 import type { Metadata, Viewport } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
@@ -21,19 +21,22 @@ const display = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Fikly Cujud | Soulightric",
-  description: "Calon Full Stack Developer • CEO Etherthink • Night Owl Coder • Power F ∞",
-  keywords: "fikly cujud, soulightric, full stack developer, next.js, indonesia, portfolio",
-  authors: [{ name: "Fikly Cujud" }],
-  creator: "Fikly Cujud",
-  publisher: "Etherthink",
+  title: {
+    default: "Fikly Cujud",
+    template: "%s | Fikly Cujud",
+  },
+  description: "Calon Full Stack Developer • CEO Etherthink • Night Owl Coder •",
+  keywords: "fikri sujud, soulightric, full-stack developer, next.js, indonesia, portfolio",
+  authors: [{ name: "Fikri Sujud" }],
+  creator: "Fikri Sujud",
+  publisher: "Fikri Sujud",
   metadataBase: new URL("https://cujud.vercel.app"),
 
   openGraph: {
-    title: "Fikly Cujud | Soulightric",
+    title: "Fikri Sujud | Soulightric",
     description: "Slowly but surely • Power F is my fuel",
     url: "https://cujud.vercel.app",
-    siteName: "Fikly Cujud",
+    siteName: "Fikri Sujud",
     images: ["/og-image.jpg"], // ganti jadi gambar 1200x630 di /public
     locale: "id_ID",
     type: "website",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fikly Cujud | Soulightric",
+    title: "Fikri Sujud | Soulightric",
     description: "Slowly but surely",
     images: ["/og-image.jpg"],
     creator: "@soulightric",
@@ -71,7 +74,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange // ini bikin gak ada flash + lebih cepat
+          disableTransitionOnChange
         >
           {children}
           <SpeedInsights />

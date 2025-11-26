@@ -6,7 +6,7 @@ import { Copy, Check } from "lucide-react";
 
 export default function BitcoinWallet() {
   const [copied, setCopied] = useState(false);
-  const wallet = "under contruc"; // ganti punya kamu
+  const wallet = "maintenance"; // ganti punya kamu
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(wallet);
