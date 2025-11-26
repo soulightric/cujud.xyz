@@ -1,51 +1,101 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { motion } from "framer-motion";
+import { 
+  Terminal, Cpu, Laptop, Database, GitBranch, Palette, Zap, Code2, 
+  Globe, Server, Rocket, Brain, Gauge, Shield, Sparkles 
+} from "lucide-react";
 
 export default function About() {
-  const skills = [
-    "Fedora Linux", "Arch Linux", "Dell Laptop", "Next.js", "React", "TypeScript", "Node.js", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL", "Git", "GitHub", "VSCode",
+  const arsenal = [
+    { name: "Arch Linux", icon: Cpu, color: "text-cyan-400", bg: "bg-cyan-400/10", glow: "shadow-cyan-400/30" },
+    { name: "Fedora", icon: Cpu, color: "text-purple-400", bg: "bg-purple-400/10", glow: "shadow-purple-400/30" },
+    { name: "Dell XPS", icon: Laptop, color: "text-gray-300", bg: "bg-gray-300/10", glow: "shadow-gray-300/30" },
+    { name: "Next.js 15", icon: Rocket, color: "text-white", bg: "bg-white/10", glow: "shadow-white/40" },
+    { name: "TypeScript", icon: Brain, color: "text-blue-400", bg: "bg-blue-400/10", glow: "shadow-blue-400/40" },
+    { name: "React", icon: Sparkles, color: "text-cyan-300", bg: "bg-cyan-300/10", glow: "shadow-cyan-300/40" },
+    { name: "Tailwind", icon: Palette, color: "text-teal-400", bg: "bg-teal-400/10", glow: "shadow-teal-400/40" },
+    { name: "PostgreSQL", icon: Database, color: "text-orange-400", bg: "bg-orange-400/10", glow: "shadow-orange-400/40" },
+    { name: "Node.js", icon: Server, color: "text-green-400", bg: "bg-green-400/10", glow: "shadow-green-400/40" },
+    { name: "Git", icon: GitBranch, color: "text-red-400", bg: "bg-red-400/10", glow: "shadow-red-400/40" },
+    { name: "VSCode", icon: Code2, color: "text-blue-500", bg: "bg-blue-500/10", glow: "shadow-blue-500/40" },
   ];
 
   return (
-    <section id="about" className="py-24">
-      <div className="container px-6 max-w-6xl mx-auto text-center">
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        > */}
-          <h2 className="text-4xl md:text-6xl font-bold mb-4">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-5">
-            Aku <span className="font-semibold text-primary text-red-500">calon</span> Full Stack Developer yang suka membangun aplikasi web modern, 
-            cepat, dan user-friendly. power F adalah bahan bakar utamaku.
+    <section id="about" className="py-24 relative overflow-hidden">
+      {/* Background glow super subtle */}
+      <div className="absolute inset-0 -z-10 opacity-30">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+      </div>
+      <div className="container px-6 max-w-7xl mx-auto">
+        {/* Header — langsung muncul, no animation */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-bold mb-4">About me</h2>
+          <p className="mt-8 text-lg max-w-4xl mx-auto leading-relaxed text-muted-foreground">
+            Aku mungkin terlahir tanpa bakat. Tapi aku punya <span className="text-primary font-bold">1000 jam terbang</span>, 
+            <span className="text-red-500"> obsesi terhadap detail</span>, dan 
+            <span className="text-cyan-400"> kemauan belajar yang tak pernah mati</span>.
+            <br />Usaha yang diasah terus-menerus akan mengalahkan bakat yang hanya tinggal diam.
           </p>
-        {/* </motion.div> */}
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <Card className="p-8 bg-background/60 backdrop-blur border-primary/10">
-            <h3 className="text-2xl font-semibold mb-4">Who Am I?</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Nama panggung ku <span className="font-semibold text-primary">Soulightric</span>. 
-              Aku lahir dan besar di Indonesia, saat ini lagi fokus ngebuild proyek-proyek 
-              open source dan sambil terus belajar teknologi terbaru. 
-              Aku mungkin terlahir tanpa bakat, tapi aku percaya kalau usaha yang sering di asah akan menyaingi mereka yang berbakat.
-            </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+          {/* Identity Card */}
+          <Card className="relative overflow-hidden bg-background/70 backdrop-blur-xl border-2 border-primary/20 shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent" />
+            <div className="relative p-10">
+              <h3 className="text-4xl font-bold mb-6 flex items-center gap-4">
+                <Shield className="w-10 h-10 text-red-500" />
+                Identity.iso
+              </h3>
+              <p className="text-primary text-2x1 font-bold leading-relaxed text-muted-foreground">
+                Nama panggung: <span className="text-primary font-bold text-purple-500">Soulightric</span>
+                <br />Base: Indonesia
+                <br />Mission: Menghancurkan pemerintahan yang korup.
+                <br /><br />
+                <span className="text-red-500 font-bold text-xl">
+                  "Bakat itu overrated. Grind itu undefeated."
+                </span>
+              </p>
+            </div>
           </Card>
 
-          <Card className="p-8 bg-background/60 backdrop-blur border-primary/10">
-            <h3 className="text-2xl font-semibold mb-6">Weapons & Tools</h3>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="text-sm py-2 px-4">
-                  {skill}
-                </Badge>
-              ))}
+          {/* Arsenal — HANYA HOVER EFEK, NO ANIMATION ON LOAD */}
+          <Card className="relative overflow-hidden bg-background/70 backdrop-blur-xl border-2 border-primary/20 shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-bl from-cyan-500/5 to-transparent" />
+            <div className="relative p-10">
+              <h3 className="text-4xl font-bold mb-8 flex items-center gap-4">
+                <Zap className="w-12 h-12 text-yellow-500" />
+                Arsenal of the Gods
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-5">
+                {arsenal.map((weapon) => (
+                  <div
+                    key={weapon.name}
+                    className="group relative"
+                  >
+                    <div className={`
+                      relative p-5 rounded-2xl border-2 
+                      ${weapon.bg} border-white/10 
+                      backdrop-blur-sm text-center
+                      transition-all duration-300
+                      group-hover:border-white/60 
+                      group-hover:shadow-2xl 
+                      group-hover:${weapon.glow}
+                      group-hover:scale-110
+                      group-hover:bg-white/5
+                    `}>
+                      <weapon.icon className={`w-10 h-10 mx-auto mb-3 ${weapon.color} group-hover:scale-125 transition-transform duration-300`} />
+                      <p className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors">
+                        {weapon.name}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </Card>
         </div>
