@@ -12,7 +12,6 @@ import {
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -51,12 +50,10 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <ThemeToggle />
         </nav>
 
         {/* Mobile Nav */}
         <div className="flex items-center gap-3 md:hidden">
-          <ThemeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full">
