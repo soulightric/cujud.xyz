@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Youtube, Instagram} from "lucide-react";
 import { motion } from "framer-motion";
-import MatrixWorms from "./MatrixWorms";
 import Link from "next/link";
 
 export default function Hero() {
@@ -13,11 +12,6 @@ export default function Hero() {
       <Navbar />
       <div className="flex-1 flex items-center justify-center relative">
         <div className="container px-6 max-w-5xl mx-auto text-center">
-          {/* <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          > */}
             <h2 className="text-2xl md:text-4xl font-light text-muted-foreground mb-4">
               はじめまして俺は
             </h2>
@@ -55,8 +49,7 @@ export default function Hero() {
               {/* <a href="#" target="blank" className="text-muted-foreground hover:text-primary transition">
                 <Instagram className="lucide lucide-instagram w-7 h-7"/>
               </a> */}
-            </div>
-          {/* </motion.div> */}
+          </div>
 
           <motion.div
             animate={{ y: [0, 10, 0] }}
