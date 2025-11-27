@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Guestbook",
-  description: "Tinggalkan jejakmu di guestbook Soulightric",
+  description: "Tinggalkan jejakmu di guestbook Fikri Sujud",
 };
 
 export default function GuestbookPage() {

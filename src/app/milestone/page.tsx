@@ -2,7 +2,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import MilestoneTimeline from "@/components/MilestoneTimeline";
-import MatrixWorms from "@/components/MatrixWorms";
 
 export const metadata: Metadata = {
   title: "Milestone",

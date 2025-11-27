@@ -1,3 +1,4 @@
+// src/components/MatrixWorms.tsx
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -12,11 +13,22 @@ export default function MatrixWorms() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // Resize canvas
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
 
     const worms: any[] = [];
-    const colors = ["#8b5cf6", "#a78bfa", "#c4b5fd", "#e9dceff0"];
+
+    // Warna cacing — adaptive ke tema
+    const lightColors = ["#8b5cf6", "#a78bfa", "#c4b5fd", "#e9d5ff"];
+    const darkColors = ["#10b981", "#34d399", "#6ee7b7", "#86efac"]; // emerald-green vibe Soulightric
+
+    const isDark = document.documentElement.classList.contains("dark");
+    const colors = isDark ? darkColors : lightColors;
 
     class Worm {
       x: number;
@@ -46,6 +58,7 @@ export default function MatrixWorms() {
         this.x += Math.cos(this.direction) * this.speed;
         this.y += Math.sin(this.direction) * this.speed;
 
+        // Wrap around screen
         if (this.x < 0) this.x = canvas!.width;
         if (this.x > canvas!.width) this.x = 0;
         if (this.y < 0) this.y = canvas!.height;
@@ -58,6 +71,7 @@ export default function MatrixWorms() {
       draw() {
         ctx!.strokeStyle = this.color;
         ctx!.lineWidth = 2;
+        ctx!.globalAlpha = 0.8;
         ctx!.beginPath();
         this.segments.forEach((seg, i) => {
           if (i === 0) ctx!.moveTo(seg.x, seg.y);
@@ -67,13 +81,19 @@ export default function MatrixWorms() {
       }
     }
 
+    // Spawn worms
     for (let i = 0; i < 12; i++) {
       worms.push(new Worm());
     }
 
     const animate = () => {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-      ctx.fillRect(0, 0, canvas!.width, canvas!.height);
+      // Trail effect — adaptive ke tema!
+      const isDarkNow = document.documentElement.classList.contains("dark");
+      ctx.fillStyle = isDarkNow 
+        ? "rgba(0, 0, 0, 0.06)"     // dark mode: hitam halus
+        : "rgba(255, 255, 255, 0.06)"; // light mode: putih halus
+
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       worms.forEach((worm) => {
         worm.update();
@@ -85,19 +105,15 @@ export default function MatrixWorms() {
 
     animate();
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+    return () => {
+      window.removeEventListener("resize", resizeCanvas);
     };
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 -z-10 pointer-events-none opacity-10"
+      className="fixed inset-0 -z-10 pointer-events-none opacity-30"
     />
   );
 }

@@ -8,10 +8,10 @@ import {
 
 export default function About() {
   const arsenal = [
-    { name: "Arch Linux", icon: Terminal, color: "text-cyan-500", bg: "bg-cyan-500/10", glow: "shadow-cyan-500/40" },
-    { name: "Fedora", icon: Terminal, color: "text-purple-500", bg: "bg-purple-500/10", glow: "shadow-purple-500/40" },
+    { name: "Arch Linux", icon: Cpu, color: "text-cyan-500", bg: "bg-cyan-500/10", glow: "shadow-cyan-500/40" },
+    { name: "Fedora", icon: Globe, color: "text-purple-500", bg: "bg-purple-500/10", glow: "shadow-purple-500/40" },
     { name: "Dell XPS", icon: Laptop, color: "text-gray-600 dark:text-gray-400", bg: "bg-muted/50", glow: "shadow-gray-500/30" },
-    { name: "Next.js 15", icon: Rocket, color: "text-foreground", bg: "bg-primary/10", glow: "shadow-primary/50" },
+    { name: "Next.js", icon: Rocket, color: "text-foreground", bg: "bg-primary/10", glow: "shadow-primary/50" },
     { name: "TypeScript", icon: Brain, color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-500/10", glow: "shadow-blue-500/40" },
     { name: "React", icon: Sparkles, color: "text-cyan-300", bg: "bg-cyan-300/10", glow: "shadow-cyan-300/40" },
     { name: "Tailwind", icon: Palette, color: "text-teal-400", bg: "bg-teal-400/10", glow: "shadow-teal-400/40" },
