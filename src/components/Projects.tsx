@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Etherthink - ERTH",
     desc: "Rencananya mau jadi web perusahaan multivalue, tapi masih dalam tahap pengembangan awal. intinya liat aja hidupku kedepannya gimana.",
-    tech: ["HTML", "CSS", "JAVA SCRIPT"],
+    tech: ["Html", "Css", "Java Script"],
     live: "https://www.etherthink.my.id",
     github: "https://github.com/soulightric/erth-porto",
     image: "/images/projects-1.webp"
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Next Portfolio (This)  ",
     desc: "Aku membuat website portofolio ini menggunakan Next.js dan masih belajar lebih dalam lagi.",
-    tech: ["Next.Js", "React", "Tailwind CSS"],
+    tech: ["Next.Js", "React", "Tailwind CSS", "TypeScript", "PostgreSQL"],
     live: "https://cujud.vercel.app/",
     github: "https://github.com/soulightric/portofolio",
     image: "/images/projects-2.webp"
