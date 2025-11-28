@@ -22,7 +22,7 @@ export default function MatrixRain() {
     window.addEventListener("resize", resizeCanvas);
 
     // Matrix characters (bisa tambah kanji kalau mau)
-    const matrixChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()*&^%±§0123456789アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+    const matrixChars = "01";
     const chars = matrixChars.split("");
 
     const fontSize = 16;
