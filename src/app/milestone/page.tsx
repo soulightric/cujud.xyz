@@ -22,7 +22,7 @@ export default function MilestonePage() {
         <MilestoneTimeline />
 
         {/* Back link */}
-        <div className="text-center mt-24">
+        <div className="text-center mt-44">
           <Link
             href="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition"

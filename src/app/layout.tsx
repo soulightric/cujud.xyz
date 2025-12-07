@@ -1,21 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Bebas_Neue } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({  
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const display = Bebas_Neue({ 
-  subsets: ["latin"],
-  weight: "400",
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const display = Orbitron({ 
+  subsets: ["latin"], 
+  weight: ["400", "700"], 
   variable: "--font-display",
-  display: "swap",
+  display: "swap"
 });
 
 export const metadata: Metadata = {
