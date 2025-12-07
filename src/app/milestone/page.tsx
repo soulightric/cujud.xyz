@@ -12,7 +12,6 @@ export default function MilestonePage() {
   return (
     <main className="min-h-screen py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Header — tanpa motion (animasi pindah ke client) */}
         <div className="text-center mb-20">
           <h1 className="text-6xl md:text-9xl font-black tracking-tighter bg-gradient-to-r from-emerald-500 to-blue-600 bg-clip-text text-transparent mb-4">
             Milestone
@@ -20,7 +19,6 @@ export default function MilestonePage() {
           <p className="text-xl text-muted-foreground">Powered by Pain</p>
         </div>
 
-        {/* Semua animasi + scroll progress ada di sini → Client Component */}
         <MilestoneTimeline />
 
         {/* Back link */}
