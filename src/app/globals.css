@@ -209,3 +209,24 @@ h1 {
 @keyframes shimmer {
   100% { left: 150%; }
 }
+
+/* ULTRA SMOOTH INFINITE MARQUEE */
+.animate-smooth-marquee {
+  display: flex;
+  width: max-content;
+  animation: smoothScroll 80s linear infinite;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%); /* 3x duplikat = -33.333% */
+  }
+}
+
+/* Pause saat hover */
+.animate-smooth-marquee:hover {
+  animation-play-state: paused;
+}
