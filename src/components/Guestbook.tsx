@@ -121,7 +121,7 @@ export default function Guestbook() {
             required
             maxLength={32}
             disabled={isSubmitting}
-            className="px-4 py-3 bg-background/40 border border-emerald-600 rounded-lg text-white placeholder-emerald-700 focus:outline-none focus:border-emerald-400 disabled:opacity-60"
+            className="px-4 py-3 bg-background/40 border border-emerald-600 rounded-lg text-red-600 placeholder-emerald-700 focus:outline-none focus:border-emerald-400 disabled:opacity-60"
           />
           <input
             name="message"
@@ -129,7 +129,7 @@ export default function Guestbook() {
             required
             maxLength={200}
             disabled={isSubmitting}
-            className="px-4 py-3 bg-background/40 border border-emerald-600 rounded-lg text-white placeholder-emerald-700 focus:outline-none focus:border-emerald-400 disabled:opacity-60"
+            className="px-4 py-3 bg-background/40 border border-emerald-600 rounded-lg text-red-600 placeholder-emerald-700 focus:outline-none focus:border-emerald-400 disabled:opacity-60"
           />
         </div>
 
