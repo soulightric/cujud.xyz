@@ -26,7 +26,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
 
           {/* Identity — NO CARD, NO BORDER, FULLY BLENDED */}
-          <div className="relative p-10 via-transparent to-transparent backdrop-blur-sm">
+          <div className="relative p-10 via-transparent to-transparent">
             <div className="absolute inset-0 opacity-50" />
             <div className="relative">
               <h3 className="text-4xl font-bold mb-6 flex items-center gap-4 text-red-500">
@@ -55,7 +55,7 @@ export default function About() {
 
         {/* Skill Levels */}
         <div className="mt-20 max-w-4xl mx-auto">
-          <h4 className="text-center text-3xl font-bold mb-10 text-primary">Skill Levels</h4>
+          <h4 className="text-center text-2xl font-bold mb-10 text-blue-500">Skill Levels</h4>
           <div className="space-y-8">
             {[
               { name: "Next.js", level: 3 },
