@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col">
-      <Navbar />
+      
       <div className="flex-1 flex items-center justify-center relative">
         <div className="container px-6 max-w-5xl mx-auto text-center">
             <h2 className="text-2xl md:text-4xl font-light text-muted-foreground mb-4">
