@@ -21,14 +21,14 @@ const projects = [
     desc: "Aku membuat website portofolio ini menggunakan Next.js dan masih belajar lebih dalam lagi.",
     tech: ["Next.Js", "React", "Tailwind CSS", "TypeScript", "PostgreSQL"],
     live: "https://cujud.vercel.app/",
-    github: "https://github.com/soulightric/portofolio",
+    github: "https://github.com/soulightric/cujud.xyz",
     image: "/images/projects-2.webp"
   },
   {
     title: "Angular Portfolio (UC)",
     desc: "Belum jadi..",
     tech: ["Angular", "Typescript", "Tailwind CSS"],
-    live: "https://cujud.vercel.app/not-found",
+    live: "https://cujud.xyz/not-found",
     github: "https://github.com/soulightric",
     image: "/images/projects-3.webp"
   },
