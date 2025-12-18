@@ -33,7 +33,7 @@ export default function About() {
           {/* Quote */}
           <div className="text-center py-12">
             <p className="text-2xl md:text-2xl italic text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              "Aku mungkin terlahir tanpa bakat, tapi aku percaya kalau usaha yang sering diasah akan menyaingi bahkan melebihi mereka yang berbakat."
+              "Aku mungkin terlahir tanpa bakat, tapi aku percaya kalau usaha yang sering diasah, bisa menyaingi bahkan melebihi mereka yang berbakat."
             </p>
             <p className="mt-6 text-primary font-bold text-xl">— Cujud</p>
           </div>
