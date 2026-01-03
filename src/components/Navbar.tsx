@@ -20,7 +20,7 @@ export default function Navbar() {
     { name: "Status", href: "/status"},
     { name: "Milestone", href: "/milestone"},
     { name: "Purpose (uc)", href: "/purpose"},
-    { name: "Notes", href: "https://chronicles.cujud.xyz/"},
+    { name: "Notes", href: "https://notes.cujud.xyz/"},
   ];
 
   const closeSheet = () => setOpen(false);
