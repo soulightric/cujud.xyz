@@ -21,6 +21,7 @@ export default function Navbar() {
     { name: "Milestones", href: "/milestone"},
     { name: "Purpose (uc)", href: "/purpose"},
     { name: "Notes", href: "https://notes.cujud.xyz/"},
+    { name: "Guestbook", href: "/guestbook" },
   ];
 
   const closeSheet = () => setOpen(false);

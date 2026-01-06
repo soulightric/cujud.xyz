@@ -24,7 +24,7 @@ export default function Hero() {
 
             <div className="flex gap-4 justify-center mb-12 flex-wrap">
               <Button size="lg" asChild>
-                <Link href="/guestbook">Guestbook</Link>
+                <Link href="https://kisah.cujud.xyz/" target="_blank">Kisah?</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="https://www.etherthink.my.id/" target="_blank">Etherthink</a>
