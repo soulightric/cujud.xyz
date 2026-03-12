@@ -27,7 +27,7 @@ export default function Hero() {
                 <Link href="https://kisah.cujud.xyz/" target="_blank">Kisah?</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://www.etherthink.my.id/" target="_blank">Etherthink</a>
+                <a href="https://etherthink.cujud.xyz/" target="_blank">Etherthink</a>
               </Button>
             </div>
 
