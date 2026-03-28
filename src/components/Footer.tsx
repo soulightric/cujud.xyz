@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Kiri — Copyright + Pain */}
           <div className="text-gray-600 dark:text-gray-500 text-center md:text-left">
             © 2025 Cujud. Built with{" "}
-            <span className="text-emerald-600 dark:text-emerald-500 font-bold"><a href="https://www.etherthink.my.id/" target="_blank">Etherthink</a></span>
+            <span className="text-emerald-600 dark:text-emerald-500 font-bold"><a href="https://etherthink.cujud.xyz/" target="_blank">Etherthink</a></span>
           </div>
 
           {/* Kanan — Status Vercel Style */}
