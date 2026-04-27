@@ -12,7 +12,7 @@ const projects = [
     title: "Etherthink - ERTH",
     desc: "Rencananya mau jadi web perusahaan multivalue, tapi masih dalam tahap pengembangan awal. intinya liat aja hidupku kedepannya gimana.",
     tech: ["Html", "Css", "Java Script"],
-    live: "https://www.etherthink.cujud.xyz",
+    live: "https://etherthink.cujud.xyz",
     github: "https://github.com/soulightric/etherthink-simple",
     image: "/images/projects-1.webp"
   },
